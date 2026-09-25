@@ -1,0 +1,208 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color:#73b1b1;
+}
+
+
+.maincontainer{
+    height: 30rem;
+    width: 48rem;
+    /* border:0.8rem solid #006d6d ; */
+    border-radius: 2rem;
+    display: flex;
+    margin-top: 4rem;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.9) 0px 4px 10px;
+    background-color: white;
+   
+}
+.inputcontainer{
+    padding-left: 2rem;
+    height: 30rem;
+    width: 24rem;
+    display: flex;
+    flex-direction: column;
+    
+    
+  
+}
+
+.outputcontainer{
+    height: 30rem;
+    width: 24rem; 
+    background-color: #006d6d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    margin-top: 3rem;
+    color: #0c5e5e;
+}
+
+label{
+    font-size: larger;
+    font-weight: 600;
+    color: #0c5e5e;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+#input{
+    height: 1.8rem;
+    width: 14.7rem;
+    font-size: large;
+    outline :none;
+    border: 2px solid #353333;
+    padding-left:3px ;
+}
+#input::placeholder{
+    color: #0f0f0f;
+}
+#unit-from{
+    height: 2rem;
+    font-size: large;
+    outline: none;
+    border: 2px solid #353333;
+
+}
+#unit-to{
+    height: 1.8rem;
+    width:18rem ;
+    margin-bottom: 4rem;
+    font-size: large;
+    outline: none;
+    border: 2px solid #353333;
+}
+button{
+    height: 2rem;
+    width: 16.5rem;
+    background-color: #0c5e5e;
+    color: #fff ;
+    font-size: larger;
+    border-radius: 0.6rem;
+    margin-left: 2rem;
+    border: none;
+}
+span{
+    color: white;
+    font-size: 5rem;
+    font-weight: 700;
+}
+#outputUnit{
+    margin-top: -6rem;
+    color: white;
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+/* ===== Responsive rules below — desktop styles above are untouched ===== */
+
+@media (max-width: 900px) {
+    .maincontainer{
+        height: auto;
+        width: 90vw;
+        max-width: 48rem;
+    }
+    .inputcontainer{
+        height: auto;
+        width: 50%;
+        padding-bottom: 2rem;
+    }
+    .outputcontainer{
+        height: auto;
+        width: 50%;
+        padding: 2rem 0;
+    }
+    #unit-to{
+        width: 100%;
+        max-width: 18rem;
+    }
+    #input{
+        width: 60%;
+        max-width: 14.7rem;
+    }
+    button{
+        width: 90%;
+        max-width: 16.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    body{
+        display: flex;
+        justify-content: center;
+        height: 100%;
+    }
+    .maincontainer{
+        flex-direction: column;
+        width: 92vw;
+        margin-top: 2rem;
+    }
+    .inputcontainer{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        padding: 0.5rem;
+    }
+    .outputcontainer{
+        width: 100%;
+        padding: 2rem 0;
+    }
+    h1{
+        margin-top: 0.5rem;
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    label{
+        margin-top: 1.5rem;
+        margin-bottom: 0.7rem;
+        font-size: 1.5rem;
+    }
+    #inputunit{
+        display: flex;
+        width: 100%;
+    
+    }
+    #input{
+        width: 70%;
+        max-width: none;
+        margin-right: 5px;
+    }
+    #unit-from{
+        flex: 1;
+        max-width: 5rem;
+    }
+    #unit-to{
+       
+        width: 90%;
+        max-width: none;
+        margin-bottom: 2rem;
+        justify-items: center;
+    }
+    button{
+        width: 80%;
+        max-width: none;
+        margin-left: 0;
+    }
+    span, #outputUnit{
+        font-size: 3.2rem;
+    }
+    #outputUnit{
+        margin-top: -3.2rem;
+    }
+}
+
+@media (max-width: 360px) {
+    span, #outputUnit{
+        font-size: 2.4rem;
+    }
+    #outputUnit{
+        margin-top: -2.4rem;
+    }
+}
